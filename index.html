@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahta Fattahi web page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="logo">
+                Inkora<span>.</span>
+            </div>
+            <!--Desktop-->
+            <ul class="nav-links">
+                <li>
+                    <a href="#home" class="menu-text">خانه</a>
+                </li>
+                <li><!--ideas and magazines-->
+                    <a href="#portfolio">نمونه کارها</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-dropdown-toggle">
+                        مقالات و ایده ها
+                        <span class="nav-chevron">v</span>
+                    </a>
+                    <ul class="nav-submenu">
+                        <li>
+                            <a href="#" data-page="articles">مقالات</a>
+                        </li>
+                        <li>
+                            <a href="#" data-page="ideas">از ایده تا اجرا</a>
+                        </li>
+                    </ul>
+                </li><!--End-->
+                <li>
+                    <a href="#about">درباره ما</a>
+                </li>
+                <li>
+                    <a href="#contact">تماس با ما</a>
+                </li>
+            </ul>
+            <button class="nav-button">شروع پروژه↗</button>
+            <!--Mobile-->
+            <button class="menu-toggle" aria-label="باز کردن منو"
+             aria-expanded="false">
+             <span></span>
+             <span></span>
+             <span></span>
+</button>
+        </nav>
+    
+        <!--Mobile menu-->
+        <div class="mobile-menu">
+             <a href="#home">خانه</a>
+              <a href="#portfolio">نمونه کارها</a>
+               <a href="#services">خدمات</a>
+                <a href="#about">درباره ما</a>
+                 <a href="#contact">تماس با ما</a>
+        </div>
+    </header>
+    <main id="main-site">
+    <section class="portfolio" id="portfolio">
+        <div class="orb"></div>
+        <div class="container">
+        <div class="section-header">
+            <span class="eyebrow">Gallery</span>
+            <h1>نمونه کارها</h1>
+            <p>
+                مجموعه ای از آثار طراحی و تصویر سازی با قلم و مرکب. هر اثر،روایتی از یک ایده است.
+            </p>
+        </div>
+        <!--Filters-->
+        <div class="filters">
+            <button class="filter active" data-filter="all">همه</button>
+            <button class="filter" data-filter="illustrataion">تصویر سازی</button>
+            <button class="filter" data-filter="concept">طراحی مفهومی</button>
+            <button class="filter" data-filter="sketch">اسکیس</button>
+            <button class="filter" data-filter="architecture">طراحی معماری</button>
+        </div>
+            <!--Grid-->
+            <div class="portfolio-grid">
+                <!--1-->
+                <article class="work-card" data-category="architecture">
+                    <div class="work-image">
+                        <img src="images/toti.jpg" alt="طراحی خانه با قلم مشکی" loading="lazy">
+                        <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
+                            <span class="expand-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+                            
+                                <path d="M8 3H3V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 3H21V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 16V21H8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21 16V21H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="work-content">
+                        <div class="work-title-row">
+                            <div>
+                                <h3 class="work-title">خانه در دل طبیعت</h3>
+                                <p class="work-category">اسکیس معماری</p>
+                            </div>
+                            <div class="work-arrow">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--2-->
+                                <article class="work-card" data-category="illustration">
+                    <div class="work-image">
+                        <img src="images/toti.jpg" alt="طراحی چهره با قلم" loading="lazy">
+                                    <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti1.jpg">
+                            <span class="expand-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+                            
+                                <path d="M8 3H3V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 3H21V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 16V21H8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21 16V21H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+
+                                </svg>
+                            </span>
+                        </button>
+                
+                    </div>
+                    <div class="work-content">
+                        <div class="work-title-row">
+                            <div>
+                                <h3 class="work-title">چهره</h3>
+                                <p class="work-category">تصویر سازی</p>
+                            </div>
+                            <div class="work-arrow">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--3-->
+                                <article class="work-card" data-category="sketch">
+                    <div class="work-image">
+                        <img src="images/toti.jpg" alt="طراحی منظره کوهستان" loading="lazy">
+                                                <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
+                            <span class="expand-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+                            
+                                <path d="M8 3H3V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 3H21V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 16V21H8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21 16V21H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="work-content">
+                        <div class="work-title-row">
+                            <div>
+                                <h3 class="work-title">منظره کوهستان</h3>
+                                <p class="work-category">اسکیس طبیعت</p>
+                            </div>
+                            <div class="work-arrow">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--4-->
+                                <article class="work-card" data-category="concept">
+                    <div class="work-image">
+                        <img src="images/toti.jpg" alt="طراحی گلدان و گل" loading="lazy">
+                                                <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
+                            <span class="expand-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+                            
+                                <path d="M8 3H3V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 3H21V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 16V21H8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21 16V21H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+
+                                </svg>
+                            </span>
+                        </button>
+                
+                    </div>
+                    <div class="work-content">
+                        <div class="work-title-row">
+                            <div>
+                                <h3 class="work-title">ترکیب بندی  اشیا</h3>
+                                <p class="work-category">طراحی مفهومی</p>
+                            </div>
+                            <div class="work-arrow">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--5-->
+                                <article class="work-card" data-category="architecture">
+                    <div class="work-image">
+                        <img src="images/toti.jpg" alt="طراحی خیابان قدیمی" loading="lazy">
+                                                <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
+                            <span class="expand-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+                            
+                                <path d="M8 3H3V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 3H21V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 16V21H8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21 16V21H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="work-content">
+                        <div class="work-title-row">
+                            <div>
+                                <h3 class="work-title">کوچه قدیمی</h3>
+                                <p class="work-category">اسکیس شهری</p>
+                            </div>
+                            <div class="work-arrow">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--6-->
+                                <article class="work-card" data-category="illustration">
+                    <div class="work-image">
+                        <img src="images/toti.jpg" alt="طراحی گل با قلم" loading="lazy">
+                                                <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
+                            <span class="expand-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+                            
+                                <path d="M8 3H3V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 3H21V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 16V21H8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21 16V21H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="work-content">
+                        <div class="work-title-row">
+                            <div>
+                                <h3 class="work-title">شاخه گل</h3>
+                                <p class="work-category">تصویر سازی</p>
+                            </div>
+                            <div class="work-arrow">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--7-->
+                                <article class="work-card" data-category="concept">
+                    <div class="work-image">
+                        <img src="images/toti.jpg" alt="طراحی چشم با قلم" loading="lazy">
+                                                <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
+                            <span class="expand-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+                            
+                                <path d="M8 3H3V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 3H21V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 16V21H8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21 16V21H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="work-content">
+                        <div class="work-title-row">
+                            <div>
+                                <h3 class="work-title">چشم</h3>
+                                <p class="work-category">طراحی مفهومی</p>
+                            </div>
+                            <div class="work-arrow">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <!--8-->
+                                <article class="work-card" data-category="sketch">
+                    <div class="work-image">
+                        <img src="images/toti.jpg" alt="طراحی قایق با قلم" loading="lazy">
+                                                <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
+                            <span class="expand-icon" aria-hidden="true">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
+                            
+                                <path d="M8 3H3V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M16 3H21V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 16V21H8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M21 16V21H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="work-content">
+                        <div class="work-title-row">
+                            <div>
+                                <h3 class="work-title">قایق در دریا</h3>
+                                <p class="work-category">اسکیس</p>
+                            </div>
+                            <div class="work-arrow">
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!--CTA-->
+            <div class="portfolio-cta">
+                <button class="view-all">
+                    مشاهده همه آثار
+                    <span>
+                        ⬅
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="about-section" id="about">
+        <div class="about-glow"></div>
+        <div class="about-glow"></div>
+        <div class="about-container"></div>
+        <div class="about-heading">
+            <span class="about-us">
+                ABOUT US
+            </span>
+            <h2>
+                ایده ها را
+                <br>
+                <span>به تصویر تبدیل میکنیم.</span>
+            </h2>
+        </div>
+        <div class="about-content">
+            <p class="about-lead">
+                ما روی طراحی، تصویر سازی و چاپ تمرکز داریم؛
+                جایی که خطوط ساده، ایده های پیچیده را به یک اثر قابل لمس تبدیل میکنند.
+            </p>
+            <p>
+                از طراحی با قلم و مرکب گرفته تا آماده سازی آثار برای چاپ، تلاش میکنیم هر پروژه شخصیت و هویت مخصوص خودش را داشته باشد.
+            </p>
+            <div class="about-stats">
+                <div class="about-stat">
+                    <strong>1</strong>
+                    <span>طراحی و تصویر سازی</span>
+                </div>
+                <div class="about-stat">
+                    <strong>2</strong>
+                    <span>طراحی برای چاپ</span>
+                </div>
+                <div class="about-stat">
+                    <strong>3</strong>
+                    <span>هویت بصری</span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer class="site-footer" id="contact">
+        <div class="footer-glow"></div>
+        <div class="footer-container">
+        <div class="footer-top">
+            <div class="footer-brand">
+    <div class="footer-logo">
+        Inkora<span>.</span>
+    </div>
+    <p class="paragraph">
+        طراحی تصویر سازی و چاپ؛ با نگاه دقیق به جزئیات.
+    </p>
+</div>
+<div class="footer-contact">
+    <span class="footer-label">
+        LET'S WORK TOGETHER
+    </span>
+    <h2>
+        پروژه ای در ذهن داری؟
+    </h2>
+    <a 
+    href="milto:rasoultg1@gmail.com"
+    class="footer-email">
+rasoultg1@gmail.com
+↗
+</a>
+</div>
+</div>
+<div class="footer-bottom">
+    <span>
+        © 2026 Inkora. All rights reserved.
+    </span>
+    <div class="footer-links">
+        <a href="#home">
+            خانه
+        </a>
+                <a href="#portfolio">
+            نمونه کارها
+        </a>
+                <a href="#about">
+            درباره ما
+        </a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="بستن">❌</button>
+<div class="lightbox-content">
+    <img src="" alt="" id="lightbox-image">
+</div>
+</div>
+    </main>
+    <!--صفحه مقالات-->
+    <section id="articles-page" class="content-page" aria-hidden="true">
+        <div class="content-page-inner">
+            <button class="back-to-site" type="button">⬅ بازگشت به سایت</button>
+            <sapn class="content-page-label">Articles</sapn>
+            <h1>مقالات</h1>
+            <p class="content-page-intro">
+                مجموعه ای از مطالب درباره طراحی، تصویر سازی، چاپ و فرآیند خلق آثار
+            </p>
+            <div class="article-list">
+                <article class="article-item">
+                    <span>
+                        01
+                    </span>
+                    <div>
+                        <h2>
+                            طراحی چگونه یک ایده را شکل می دهد؟
+                        </h2>
+                        <p>
+                            درباره رابطه میان ایده و خط، فرم و تصویر 
+                        </p>
+                    </div>
+                </article>
+                  <article class="article-item">
+                    <span>
+                        02
+                    </span>
+                    <div>
+                        <h2>
+                            نقش طراحی دستی در معماری 
+                        </h2>
+                        <p>
+                            بررسی جایگاه اسکیس و طراحی دستی در فرآیند معماری. 
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!--صفحه ایده ها-->
+        <section id="ideas-page" class="content-page" aria-hidden="true">
+        <div class="content-page-inner">
+            <button class="back-to-site" type="button">⬅ بازگشت به سایت</button>
+            <sapn class="content-page-label">Ideas</sapn>
+            <h1>ایده ها</h1>
+            <p class="content-page-intro">
+                یادداشت ها و ایده هایی درباره تصویر طراحی، چاپ  و تجربه های بصری 
+            </p>
+            <div class="ideas-grid">
+                <article class="idea-card">
+                    <span>
+                        01
+                    </span>
+                    <div>
+                        <h2>
+                            چرا خط مهم است؟
+                        </h2>
+                        <p>
+                            یک ایده کوتاه درباره نقش خط در شکل گیری تصویر
+                        </p>
+                    </div>
+                </article>
+                  <article class="idea-catd">
+                    <span>
+                        02
+                    </span>
+                    <div>
+                        <h2>
+                            از اسکیس تا اثر نهایی
+                        </h2>
+                        <p>
+                            مسیر تبدیل یک طرح اولیه به یک اثر کامل
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <script src="./app.js"></script>
+</body>
+</html>
