@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahta Fattahi web page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mahta Fattahi web page E</title>
+    <link rel="stylesheet" href="styleE.css">
 
 </head>
 <body>
@@ -16,35 +16,35 @@
             <!--Desktop-->
             <ul class="nav-links">
                 <li>
-                    <a href="#home" class="menu-text">خانه</a>
+                    <a href="#home" class="menu-text">Home</a>
                 </li>
                 <li><!--ideas and magazines-->
-                    <a href="#portfolio">نمونه کارها</a>
+                    <a href="#portfolio">portfolios</a>
                 </li>
                 <li>
                     <a href="#" class="nav-dropdown-toggle">
-                        مقالات و ایده ها
+                     Articles and Ideas
                         <span class="nav-chevron">v</span>
                     </a>
                     <ul class="nav-submenu">
                         <li>
-                            <a href="#" data-page="articles">مقالات</a>
+                            <a href="#" data-page="articles">Article</a>
                         </li>
                         <li>
-                            <a href="#" data-page="ideas">از ایده تا اجرا</a>
+                            <a href="#" data-page="ideas">from Idea to do</a>
                         </li>
                     </ul>
                 </li><!--End-->
                 <li>
-                    <a href="#about">درباره ما</a>
+                    <a href="#about">About us</a>
                 </li>
                 <li>
-                    <a href="#contact">تماس با ما</a>
+                    <a href="#contact">Contact us</a>
                 </li>
             </ul>
-            <button class="nav-button">شروع پروژه↗</button>
+            <button class="nav-button">Start project↗</button>
             <!--Mobile-->
-            <button class="menu-toggle" aria-label="باز کردن منو"
+            <button class="menu-toggle" aria-label="Opening menu"
              aria-expanded="false">
              <span></span>
              <span></span>
@@ -54,11 +54,10 @@
     
         <!--Mobile menu-->
         <div class="mobile-menu">
-             <a href="#home">خانه</a>
-              <a href="#portfolio">نمونه کارها</a>
-               <a href="#services">خدمات</a>
-                <a href="#about">درباره ما</a>
-                 <a href="#contact">تماس با ما</a>
+             <a href="#home">Home</a>
+              <a href="#portfolio">portfolios</a>
+                <a href="#about">About us</a>
+                 <a href="#contact">Contact us</a>
         </div>
     </header>
     <main id="main-site">
@@ -67,25 +66,25 @@
         <div class="container">
         <div class="section-header">
             <span class="eyebrow">Gallery</span>
-            <h1>نمونه کارها</h1>
-            <p>
-                مجموعه ای از آثار طراحی و تصویر سازی با قلم و مرکب. هر اثر،روایتی از یک ایده است.
+            <h1 class="typewriter">portfolios</h1>
+            <p class="typewriter">
+                A collection of drawings and illustrations created with pen and ink. Each piece is a narrative of an idea.
             </p>
         </div>
         <!--Filters-->
         <div class="filters">
-            <button class="filter active" data-filter="all">همه</button>
-            <button class="filter" data-filter="illustrataion">تصویر سازی</button>
-            <button class="filter" data-filter="concept">طراحی مفهومی</button>
-            <button class="filter" data-filter="sketch">اسکیس</button>
-            <button class="filter" data-filter="architecture">طراحی معماری</button>
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="illustration"> illustration</button>
+            <button class="filter" data-filter="concept"> Conceptual design</button>
+            <button class="filter" data-filter="sketch">Sketch</button>
+            <button class="filter" data-filter="architecture"> Architectural Design</button>
         </div>
             <!--Grid-->
             <div class="portfolio-grid">
                 <!--1-->
                 <article class="work-card" data-category="architecture">
                     <div class="work-image">
-                        <img src="images/toti.jpg" alt="طراحی خانه با قلم مشکی" loading="lazy">
+                        <img src="toti.jpg" alt="طراحی خانه با قلم مشکی" loading="lazy">
                         <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
                             <span class="expand-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
@@ -113,7 +112,7 @@
                 <!--2-->
                                 <article class="work-card" data-category="illustration">
                     <div class="work-image">
-                        <img src="images/toti.jpg" alt="طراحی چهره با قلم" loading="lazy">
+                        <img src="toti.jpg" alt="طراحی چهره با قلم" loading="lazy">
                                     <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti1.jpg">
                             <span class="expand-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
@@ -142,7 +141,7 @@
                 <!--3-->
                                 <article class="work-card" data-category="sketch">
                     <div class="work-image">
-                        <img src="images/toti.jpg" alt="طراحی منظره کوهستان" loading="lazy">
+                        <img src="toti.jpg" alt="طراحی منظره کوهستان" loading="lazy">
                                                 <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
                             <span class="expand-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
@@ -170,7 +169,7 @@
                 <!--4-->
                                 <article class="work-card" data-category="concept">
                     <div class="work-image">
-                        <img src="images/toti.jpg" alt="طراحی گلدان و گل" loading="lazy">
+                        <img src="toti.jpg" alt="طراحی گلدان و گل" loading="lazy">
                                                 <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
                             <span class="expand-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
@@ -199,7 +198,7 @@
                 <!--5-->
                                 <article class="work-card" data-category="architecture">
                     <div class="work-image">
-                        <img src="images/toti.jpg" alt="طراحی خیابان قدیمی" loading="lazy">
+                        <img src="toti.jpg" alt="طراحی خیابان قدیمی" loading="lazy">
                                                 <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
                             <span class="expand-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
@@ -227,7 +226,7 @@
                 <!--6-->
                                 <article class="work-card" data-category="illustration">
                     <div class="work-image">
-                        <img src="images/toti.jpg" alt="طراحی گل با قلم" loading="lazy">
+                        <img src="toti.jpg" alt="طراحی گل با قلم" loading="lazy">
                                                 <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
                             <span class="expand-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
@@ -255,7 +254,7 @@
                 <!--7-->
                                 <article class="work-card" data-category="concept">
                     <div class="work-image">
-                        <img src="images/toti.jpg" alt="طراحی چشم با قلم" loading="lazy">
+                        <img src="toti.jpg" alt="طراحی چشم با قلم" loading="lazy">
                                                 <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
                             <span class="expand-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
@@ -283,7 +282,7 @@
                 <!--8-->
                                 <article class="work-card" data-category="sketch">
                     <div class="work-image">
-                        <img src="images/toti.jpg" alt="طراحی قایق با قلم" loading="lazy">
+                        <img src="toti.jpg" alt="طراحی قایق با قلم" loading="lazy">
                                                 <button class="image-expand" type="button" aria-label="نمایش بزرگتر تصویر" data-full="toti.jpg">
                             <span class="expand-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" xmlns="https://www.w3.org/2000/svg">
@@ -311,55 +310,104 @@
             </div>
             <!--CTA-->
             <div class="portfolio-cta">
-                <button class="view-all">
-                    مشاهده همه آثار
-                    <span>
-                        ⬅
-                    </span>
-                </button>
             </div>
         </div>
     </div>
     </section>
     <section class="about-section" id="about">
-        <div class="about-glow"></div>
-        <div class="about-glow"></div>
-        <div class="about-container"></div>
-        <div class="about-heading">
-            <span class="about-us">
-                ABOUT US
-            </span>
-            <h2>
-                ایده ها را
-                <br>
-                <span>به تصویر تبدیل میکنیم.</span>
-            </h2>
-        </div>
-        <div class="about-content">
-            <p class="about-lead">
-                ما روی طراحی، تصویر سازی و چاپ تمرکز داریم؛
-                جایی که خطوط ساده، ایده های پیچیده را به یک اثر قابل لمس تبدیل میکنند.
-            </p>
-            <p>
-                از طراحی با قلم و مرکب گرفته تا آماده سازی آثار برای چاپ، تلاش میکنیم هر پروژه شخصیت و هویت مخصوص خودش را داشته باشد.
-            </p>
-            <div class="about-stats">
-                <div class="about-stat">
-                    <strong>1</strong>
-                    <span>طراحی و تصویر سازی</span>
-                </div>
-                <div class="about-stat">
-                    <strong>2</strong>
-                    <span>طراحی برای چاپ</span>
-                </div>
-                <div class="about-stat">
-                    <strong>3</strong>
-                    <span>هویت بصری</span>
-                </div>
+
+    <div class="about-glow"></div>
+    <div class="about-glow"></div>
+    <div class="about-heading">
+        <span class="about-us">
+            ABOUT US
+        </span>
+
+        <h2>
+            We turn ideas
+            <br>
+            <span>into images</span>
+        </h2>
+    </div>
+
+    <div class="about-content">
+
+    <p class="about-lead">
+        I am a visual artist exploring the connection between
+        imagination, form, and visual storytelling.
+    </p>
+
+    <p>
+        Through illustration, printmaking, and experimental design,
+        I transform ideas into meaningful visual experiences.
+        Every artwork is created with attention to detail,
+        emotion, and the relationship between shapes and spaces.
+    </p>
+
+
+    <div class="about-stats">
+
+        <div class="about-stat">
+            <div class="stat-number">
+                01
+            </div>
+
+            <div class="stat-text">
+                <h3>Creative Process</h3>
+                <p >
+                    From the first idea to the final artwork,
+                    every step is carefully developed.
+                </p>
             </div>
         </div>
+
+
+
+        <div class="about-stat">
+
+            <div class="stat-number">
+                02
+            </div>
+
+            <div class="stat-text">
+                <h3>Visual Exploration</h3>
+
+                <p>
+                    Exploring lines, colors, textures,
+                    and different artistic techniques.
+                </p>
+            </div>
+
         </div>
-    </section>
+
+
+
+        <div class="about-stat">
+
+            <div class="stat-number">
+                03
+            </div>
+
+            <div class="stat-text">
+
+                <h3>Unique Artworks</h3>
+
+                <p>
+                    Creating original pieces that combine
+                    imagination with personal expression.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+</section>
     <footer class="site-footer" id="contact">
         <div class="footer-glow"></div>
         <div class="footer-container">
@@ -369,7 +417,7 @@
         Inkora<span>.</span>
     </div>
     <p class="paragraph">
-        طراحی تصویر سازی و چاپ؛ با نگاه دقیق به جزئیات.
+Illustration design and printing—with a keen eye for detail.
     </p>
 </div>
 <div class="footer-contact">
@@ -377,12 +425,12 @@
         LET'S WORK TOGETHER
     </span>
     <h2>
-        پروژه ای در ذهن داری؟
+        do you have project in you'r mind?
     </h2>
     <a 
-    href="milto:rasoultg1@gmail.com"
+    href="mailto:rasoultg1@gmail.com"
     class="footer-email">
-rasoultg1@gmail.com
+Mahtafattahi@gmail.com
 ↗
 </a>
 </div>
@@ -393,13 +441,13 @@ rasoultg1@gmail.com
     </span>
     <div class="footer-links">
         <a href="#home">
-            خانه
+            Home
         </a>
                 <a href="#portfolio">
-            نمونه کارها
+            portfolios
         </a>
                 <a href="#about">
-            درباره ما
+            About us
         </a>
 </div>
 </div>
@@ -416,11 +464,11 @@ rasoultg1@gmail.com
     <!--صفحه مقالات-->
     <section id="articles-page" class="content-page" aria-hidden="true">
         <div class="content-page-inner">
-            <button class="back-to-site" type="button">⬅ بازگشت به سایت</button>
-            <sapn class="content-page-label">Articles</sapn>
-            <h1>مقالات</h1>
+            <button class="back-to-site" type="button">Back to site⬅ </button>
+            <span class="content-page-label">Articles</span>
+            <h1>Articles</h1>
             <p class="content-page-intro">
-                مجموعه ای از مطالب درباره طراحی، تصویر سازی، چاپ و فرآیند خلق آثار
+                A collection of material on design, illustration, printing, and the creative process.
             </p>
             <div class="article-list">
                 <article class="article-item">
@@ -429,10 +477,10 @@ rasoultg1@gmail.com
                     </span>
                     <div>
                         <h2>
-                            طراحی چگونه یک ایده را شکل می دهد؟
+                            How does design shape an idea?
                         </h2>
                         <p>
-                            درباره رابطه میان ایده و خط، فرم و تصویر 
+On the relationship between idea and line, form and image.
                         </p>
                     </div>
                 </article>
@@ -442,10 +490,10 @@ rasoultg1@gmail.com
                     </span>
                     <div>
                         <h2>
-                            نقش طراحی دستی در معماری 
+The Role of Hand Drawing in Architecture
                         </h2>
                         <p>
-                            بررسی جایگاه اسکیس و طراحی دستی در فرآیند معماری. 
+An examination of the role of sketching and hand drawing in the architectural process.
                         </p>
                     </div>
                 </article>
@@ -455,11 +503,11 @@ rasoultg1@gmail.com
     <!--صفحه ایده ها-->
         <section id="ideas-page" class="content-page" aria-hidden="true">
         <div class="content-page-inner">
-            <button class="back-to-site" type="button">⬅ بازگشت به سایت</button>
-            <sapn class="content-page-label">Ideas</sapn>
-            <h1>ایده ها</h1>
+            <button class="back-to-site" type="button">Back to site ⬅ </button>
+            <span class="content-page-label">Ideas</span>
+            <h1>Ideas</h1>
             <p class="content-page-intro">
-                یادداشت ها و ایده هایی درباره تصویر طراحی، چاپ  و تجربه های بصری 
+                Notes and ideas on imagery, design, printing, and visual experiences.
             </p>
             <div class="ideas-grid">
                 <article class="idea-card">
@@ -468,29 +516,30 @@ rasoultg1@gmail.com
                     </span>
                     <div>
                         <h2>
-                            چرا خط مهم است؟
+Why is handwriting important?
                         </h2>
                         <p>
-                            یک ایده کوتاه درباره نقش خط در شکل گیری تصویر
+                            A brief idea regarding the role of line in the formation of an image.
                         </p>
                     </div>
                 </article>
-                  <article class="idea-catd">
+                  <article class="idea-card">
                     <span>
                         02
                     </span>
                     <div>
                         <h2>
-                            از اسکیس تا اثر نهایی
+                            From Sketch to Final Work
                         </h2>
                         <p>
-                            مسیر تبدیل یک طرح اولیه به یک اثر کامل
+                            The process of transforming an initial concept into a finished work.
                         </p>
                     </div>
                 </article>
             </div>
         </div>
     </section>
-    <script src="./app.js"></script>
+    <script src="./appE.js"></script>
+    
 </body>
 </html>
