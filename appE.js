@@ -259,5 +259,137 @@ dropdownToggle.addEventListener("click", event =>{
         .classList
         .toggle("open");
     }
-    
 });
+const anchorLinks = document.querySelectorAll('a[href^="#"]');
+anchorLinks.forEach(link =>{
+    link.addEventListener("click" , function(event){
+        const targetId = this.getAttribute("href");
+        if (!targetId || targetId === "#") return;
+        const target = document.querySelector(targetId);
+        if (!target) return;
+        mainSite.classList.remove("site-hidden");
+        articlesPage.classList.remove("active");
+        ideasPage.classList.remove("active");
+        event.preventDefault();
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        })
+    })
+})
+/* =========================================
+   ABOUT SCROLL TEXT
+========================================= */
+
+const aboutSection = document.querySelector(".about-section");
+const aboutText1 = document.querySelector(".about-bg-text-1");
+const aboutText2 = document.querySelector(".about-bg-text-2");
+
+function animateAboutBackground(){
+
+    if(!aboutSection || !aboutText1 || !aboutText2){
+        return;
+    }
+
+    const rect = aboutSection.getBoundingClientRect();
+    const vh = window.innerHeight;
+
+    const progress =
+        (vh - rect.top) / (vh + rect.height);
+
+    const p = Math.max(0, Math.min(1, progress));
+
+    /* ABOUT US */
+
+    const y1 = 180 - (p * 260);
+
+    aboutText1.style.transform =
+        `translate3d(0, ${y1}px, 0)`;
+
+    aboutText1.style.opacity =
+        Math.min(0.08, p * 0.12);
+
+
+    /* WE TURN IDEAS INTO IMAGES */
+
+    const y2 = 220 - (p * 280);
+
+    aboutText2.style.transform =
+        `translate3d(0, ${y2}px, 0)`;
+
+    aboutText2.style.opacity =
+        Math.min(0.08, Math.max(0, (p - 0.15) * 0.12));
+}
+
+
+window.addEventListener(
+    "scroll",
+    animateAboutBackground,
+    { passive: true }
+);
+
+window.addEventListener(
+    "load",
+    animateAboutBackground
+);
+/* =========================================
+   TYPEWRITER
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const elements =
+        document.querySelectorAll(".typewriter");
+
+    elements.forEach((element, index) => {
+
+        const originalText =
+            element.textContent.trim();
+
+        element.textContent = "";
+
+        let i = 0;
+
+        function type(){
+
+            if(i < originalText.length){
+
+                element.textContent +=
+                    originalText.charAt(i);
+
+                i++;
+
+                setTimeout(type, 45);
+
+            }
+        }
+
+        setTimeout(type, index * 500);
+
+    });
+
+});
+const aboutHeading = document.querySelector(".about-heading");
+function revealAboutHeading() {
+    if (!aboutHeading) return;
+
+    const rect = aboutHeading.getBoundingClientRect();
+
+    if (rect.top < window.innerHeight * 0.85) {
+        aboutHeading.classList.add("show");
+    }
+}
+
+window.addEventListener("scroll", revealAboutHeading);
+window.addEventListener("load", revealAboutHeading);
+const GalleryHeader = document.querySelector(".section-header");
+const Gallerytext = document.querySelector(".eyebrow");
+function revealGallerytext(){
+    if (!GalleryHeader || !Gallerytext) return;
+    const position = GalleryHeader.getBoundingClientRect();
+    if (position.top< window.innerHeight * .85){
+        Gallerytext.classList.add("show");
+    }
+}
+window.addEventListener("scroll" , revealGallerytext);
+window.addEventListener("load", revealGallerytext)
