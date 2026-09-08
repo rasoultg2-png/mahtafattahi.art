@@ -283,8 +283,8 @@ z-index: 2;
 }
 .eyebrow{
     position: absolute;
-    top: -35px;
-    left: 190px;
+    top: -65px;
+left: clamp(20px,14vw,190px);
     width: max-content;
     direction: ltr;
     font-family: goergia ,serif;
@@ -301,7 +301,36 @@ z-index: 2;
     -moz-transition: transform 1s ease;
     -ms-transition: transform 1s ease;
     -o-transition: transform 1s ease;
+    opacity: 0;
+    transform: translateY(100px);
+    transition:
+    opacity 1s ease,
+    transform 1.4s cubic-bezier(.16,1,.3,1)
+    ;
+}
+.Gallery-header{
+    position: relative;
+}
+.Gallery-header h2{
+    position: relative;
+    z-index: 2;
+}
+.eyebrow.show{
     opacity: 1;
+    transform: translateY(0);
+}
+@media (max-width:768px){
+
+    .eyebrow{
+
+        top:-45px;
+
+        left:80px;
+
+        font-size:55px;
+
+    }
+
 }
 .section-header h1{
     font-size: clamp(34px, 5vw,62px);
@@ -854,6 +883,7 @@ body{
         box-shadow: 0 30px 90px rgba(0,0,0,.20);
         backdrop-filter: blur(18px);
         -webkit-backdrop-filter: blur(18px);
+        border-radius: 20px;
     }
     .about-content p{
         margin: 0 0 20px;
@@ -878,7 +908,7 @@ body{
     .about-stat{
         position: relative;
         min-height: 120px;
-        padding: 20px;
+        padding: 30px 10px;
         overflow: hidden;
         border: 1px solid rgba(255, 255, 255, 0.10);
         border-radius: 18px;
@@ -1406,7 +1436,7 @@ body * {
         padding: 80px 0;
     }
     .about-container{
-        width: calc(100% - 28px);
+        width: calc(100% - 38px);
     }
     .about-content{
         padding: 22px;
@@ -1421,7 +1451,7 @@ body * {
     gap: 10px;
 }
 .about-stat{
-    min-height: 90px;
+    min-height: auto;
     padding: 18px;
 }
 .about-glow-one{
@@ -1550,7 +1580,7 @@ to{
         gap: 12px 20px;
     }
 }
-.nav-dropdown-Toggel{
+.nav-dropdown-toggel{
     margin-top:22px;
     margin-bottom: -6px;
     position: relative;
@@ -1605,7 +1635,7 @@ li{
     -ms-transform: translateY(-5px) scale(.97);
     -o-transform: translateY(-5px) scale(.97);
 }
-.nav-dropdown-Toggel:hover .nav-submenu{
+.nav-dropdown-toggel:hover .nav-submenu{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -1695,7 +1725,7 @@ li{
     );
     margin-inline: auto;
 }
-.content-page-labe{
+.content-page-label{
     display: block;
     margin-bottom: 16px;
     color: rgba(130,125,255,.7);
@@ -1824,7 +1854,7 @@ li{
 .site-hidden{
     display: none;
 }
-.nav-dropdown-Toggel:hover + .nav-submenu{
+.nav-dropdown-toggel:hover + .nav-submenu{
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -1847,4 +1877,131 @@ li{
 .hero{
     position: relative;
     overflow: hidden;
+}
+.typewriter{
+    display: inline;
+    white-space: normal;
+    width: auto;
+    overflow: visible;
+    border: 0;
+    padding: 0;
+    animation: none !important;
+}
+/* =========================================
+   ABOUT SCROLL BACKGROUND TEXT
+========================================= */
+
+.about-section{
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* متن‌های بزرگ پشت محتوا */
+/* =========================================
+   ABOUT BACKGROUND TEXT
+========================================= */
+
+.about-section{
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.about-bg-text{
+    position: absolute;
+    z-index: 0;
+
+    white-space: nowrap;
+    pointer-events: none;
+    user-select: none;
+
+    color: rgba(255,255,255,.055);
+
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    line-height: .9;
+    letter-spacing: -5px;
+
+    opacity: 0;
+
+    will-change: transform, opacity;
+}
+
+/* ABOUT US */
+
+.about-bg-text-1{
+    top: 15%;
+    left: -5%;
+
+    font-size: clamp(90px, 15vw, 220px);
+
+    transform: translate3d(0, 180px, 0);
+}
+
+/* WE TURN IDEAS INTO IMAGES */
+
+.about-bg-text-2{
+    top: 52%;
+    right: -10%;
+
+    font-size: clamp(55px, 9vw, 150px);
+
+    transform: translate3d(0, 220px, 0);
+}
+
+/* محتوا روی متن */
+
+.about-heading,
+.about-content{
+    position: relative;
+    z-index: 2;
+}
+/* محتوای اصلی روی متن‌ها */
+
+.about-container{
+    position: relative;
+    z-index: 5;
+}
+
+
+/* خود کارت بالاتر از متن‌ها */
+
+.about-content{
+    position: relative;
+    z-index: 10;
+}
+@media (max-width: 600px){
+
+    .about-bg-text-1{
+        top: 12%;
+        left: -25%;
+        font-size: 90px;
+    }
+
+    .about-bg-text-2{
+        top: 58%;
+        right: -45%;
+        font-size: 65px;
+    }
+
+}
+.typewriter{
+    display: block;
+    width: auto;
+    overflow: visible;
+    white-space: normal;
+    animation: none !important;
+}
+.about-heading {
+    opacity: 0;
+    transform: translateY(120px);
+    transition:
+        opacity 0.9s ease,
+        transform 1s cubic-bezier(.16, 1, .3, 1);
+}
+
+.about-heading.show {
+    opacity: 1;
+    transform: translateY(0);
 }
